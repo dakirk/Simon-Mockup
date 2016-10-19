@@ -15,12 +15,13 @@ while(gameRunning):
     
     submissionList = []
 
-    
+    print("Remember this sequence:")
     print(numList)
     time.sleep(5)
     print ("\n" * 100)
 
     # Gets player input, checks against list, and breaks if player makes a mistake
+    print("Type the sequence, pressing enter after each number:")
     for i in range(0, x):
         submissionList.append(eval(input()))
         if(submissionList[i] != numList[i]):
